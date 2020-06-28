@@ -1,6 +1,6 @@
 import java.lang.Math;
 
-class WrapperClasses {
+class TiposPrimitivos {
     byte pByte;
     short pShort;
     int pInt;
@@ -19,33 +19,32 @@ class WrapperClasses {
     Boolean wBoolean;
 
     public static void main(String[] args) {
-        WrapperClasses wrapper = new WrapperClasses();
-        wrapper.pBoolean = true;
+        TiposPrimitivos tiposPrimitivos = new TiposPrimitivos();
+        tiposPrimitivos.pBoolean = true;
+        
         //minimo e maximo tipos primitivos
+        tiposPrimitivos.pByte = 127;
+        tiposPrimitivos.pByte = -127;
 
-        wrapper.pByte = 127;
-        wrapper.pByte = -127;
+        tiposPrimitivos.pShort = -32768;
+        tiposPrimitivos.pShort = 32767;
+       
+        tiposPrimitivos.pInt = (int)(Math.pow(2, 31) - 1); //utilizado precedencia para evitar truncate
+        tiposPrimitivos.pInt = (int) Math.pow(-2, 31);
 
-        wrapper.pShort = -32768;
-        wrapper.pShort = 32767;
-
-        //utilizado precedencia para evitar truncate
-        wrapper.pInt = (int)(Math.pow(2, 31) - 1);
-        wrapper.pInt = (int) Math.pow(-2, 31);
-
-        wrapper.pLong = (long)(Math.pow(2, 63) - 1);
-        wrapper.pLong = (long) Math.pow(2, 63);
+        tiposPrimitivos.pLong = (long)(Math.pow(2, 63) - 1);
+        tiposPrimitivos.pLong = (long) Math.pow(2, 63);
 
         //float armazena até 32 bits
-        wrapper.pFloat = Float.MAX_VALUE;
-        wrapper.pFloat = Float.MIN_VALUE;
+        tiposPrimitivos.pFloat = Float.MAX_VALUE;
+        tiposPrimitivos.pFloat = Float.MIN_VALUE;
 
         //double tem a maior precisão em relação a float
-        wrapper.pDouble = Double.MAX_VALUE;
-        wrapper.pDouble = Double.MIN_VALUE;
+        tiposPrimitivos.pDouble = Double.MAX_VALUE;
+        tiposPrimitivos.pDouble = Double.MIN_VALUE;
 
         //CHAR aemazena um caracter utilizando 16 bits
-        wrapper.pChar = 'J';
+        tiposPrimitivos.pChar = 'J';
 
         //		System.out.println();
 
