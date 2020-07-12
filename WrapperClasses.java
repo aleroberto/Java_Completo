@@ -9,8 +9,6 @@ class WrapperClasses {
     Character wChar;
     Boolean wBoolean;
 
-
-
     public static void main(String[] args) {
         WrapperClasses wrapperClass = new WrapperClasses();
         TiposPrimitivos tiposPrimitivos = new TiposPrimitivos();
@@ -40,7 +38,6 @@ class WrapperClasses {
         //CHAR aemazena um caracter utilizando 16 bits
         tiposPrimitivos.pChar = 'J';
 
-
         //Autoboxing
         Byte wByte = new Byte(tiposPrimitivos.pByte);
         Short wShort = new Short(tiposPrimitivos.pShort);
@@ -50,7 +47,7 @@ class WrapperClasses {
         Double wDouble = new Double(tiposPrimitivos.pDouble);
         Character wCharacter = new Character(tiposPrimitivos.pChar);
 
-        //Getting the primitive value 
+        //Getting the primitive value
         byte n_Byte = wByte;
         int n_Int = wInteger;
 
